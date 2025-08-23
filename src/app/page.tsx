@@ -131,9 +131,9 @@ export default function Home() {
         {/* Social links */}
         <div className="flex gap-6">
           {[
-            { name: 'GitHub', color: 'hover:text-gray-400', href: '#' },
+            { name: 'GitHub', color: 'hover:text-gray-400', href: 'https://github.com/jackbraun-ai/attempt2' },
             { name: 'LinkedIn', color: 'hover:text-blue-400', href: 'https://www.linkedin.com/in/jackbraun18/' },
-            { name: 'Twitter', color: 'hover:text-cyan-400', href: '#' }
+            { name: 'Skool', color: 'hover:text-cyan-400', href: 'https://www.skool.com/jackbraunai-8960' }
           ].map((social) => (
             <a
               key={social.name}

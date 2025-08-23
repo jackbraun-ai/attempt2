@@ -1,4 +1,6 @@
-@import "tailwindcss";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 :root {
   --background: #000000;
@@ -6,8 +8,8 @@
   /* Map theme-like variables without using the @theme at-rule */
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --font-sans: var(--font-inter);
+  --font-mono: var(--font-jetbrains-mono);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -20,7 +22,7 @@
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: 'Courier New', 'Monaco', 'Menlo', monospace;
+  font-family: var(--font-sans), 'Courier New', 'Monaco', 'Menlo', monospace;
   margin: 0;
   padding: 0;
   overflow-x: hidden;
