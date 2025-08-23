@@ -74,7 +74,7 @@ export default function Home() {
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 via-blue-500 to-purple-600">
               {typedText}
             </span>
-            <span className="text-cyan-400 animate-pulse">|</span>
+            <span className="text-cyan-400 animate-pulse select-none pointer-events-none">|</span>
           </h1>
         </div>
 
@@ -93,12 +93,11 @@ export default function Home() {
           >
             Get In Touch
           </a>
-          <Link
-            href="/labs/finfluencer-risk-radar"
-            className="relative inline-flex items-center justify-center px-8 py-4 bg-transparent border-2 border-purple-500 text-purple-400 hover:bg-purple-500 hover:text-white font-bold rounded-lg transition-all duration-300 transform hover:scale-105 hover:shadow-lg hover:shadow-purple-500/25"
+          <div
+            className="relative inline-flex items-center justify-center px-8 py-4 bg-transparent border-2 border-purple-500 text-purple-400 font-bold rounded-lg cursor-default"
           >
             <span className="relative z-10">Work in Progress</span>
-            {/* Progress overlay inside the link to keep alignment */}
+            {/* Progress overlay */}
             <span aria-hidden className="pointer-events-none absolute inset-0 rounded-lg overflow-hidden">
               <span className="absolute inset-0 bg-gray-800 rounded-lg" />
               <span className="absolute inset-0 bg-gradient-to-r from-purple-500 via-blue-500 to-cyan-500 rounded-lg opacity-70 animate-pulse" />
@@ -110,7 +109,7 @@ export default function Home() {
                 }}
               />
             </span>
-          </Link>
+          </div>
         </div>
 
         {/* Tech stack */}
