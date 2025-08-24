@@ -1,0 +1,22 @@
+# Target modern browsers only to avoid unnecessary polyfills
+# This will reduce bundle size by not transpiling modern JavaScript features
+
+# Modern browsers (last 2 versions)
+last 2 versions
+
+# Modern browsers with > 1% market share
+> 1%
+
+# Not dead browsers
+not dead
+
+# Not IE
+not ie 11
+not ie 10
+not ie 9
+
+# Modern mobile browsers
+last 2 iOS major versions
+last 2 ChromeAndroid major versions
+last 2 FirefoxAndroid major versions
+last 2 Safari major versions
